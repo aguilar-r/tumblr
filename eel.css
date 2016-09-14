@@ -1,0 +1,71 @@
+/*
+ @author	Raul Aguilar
+ @desc		designed for 1400px screen, doesn;t make sense I know
+ @date		2015 November 18
+ */
+ 
+ /* -------------------	MEDIA SCREEN MIN 1400px --------------------------- */
+@media only screen
+and (min-width: 1400px) {
+    html{
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;	}
+    ::selection { color: #ffffff; background: #ff6699;	}
+    ::-moz-selection { color: #ffffff; background: #ff6699; }
+    
+    body { margin: 0; padding: 0;	}
+    p { color: #000000; font-family: Helvetica, sans-serif; text-align: left; clear: both;	}
+    p a { color: #3399ff; font-family: Helvetica, sans-serif; font-size: 1em; text-decoration: none;	}
+    p a:visited { color: #3399ff; font-family: Helvetica; font-size: 1em; text-decoration: none; }
+    p a:hover { color: #ff0000; font-family: Helvetica; font-size: 1em; text-decoration: none; }
+    
+    .contentWrapper { display: block; width: 100%; padding-bottom: 15px; float: none; clear: both; }
+    .contentBody { width: 50%; height: 100%; background-color: #ffffff; margin: auto; border-radius: 5px; float: none;	}
+    .content { width: 89.950808151791988756148981026001%; height: 100%; background-color: #ffffff; margin: 0 auto 10px auto; float: none;	}
+    .navBar { display: block; float:left; clear: both; }
+	
+    /*	HEADLINE	*/
+    #headline { font-size: 1.45em; margin: 0; }
+    #headline a { color: #3d3d3d; font-family: Arial; text-align: left; text-indent: 5px; text-transform: lowercase; text-decoration: none; margin-bottom: 5px; }
+    #headline a:hover { background: #000000; color: #ffffff; font-family: times; }
+    
+    /*	POST	*/
+    #post { display: block; font-family: Helvetica; font-size: 1em; text-align: left; margin: auto; float: none; clear: both; }
+    #bottom { display: block; font-family: Verdana; font-size: 0.71em; text-align: right; text-transform: lowercase;	}
+    .image { display: block; margin: auto; max-width: 100%; max-height: 100%;	}
+    
+	/* NAVIGATION BAR */
+	
+    /* AUDIOJS	*/
+    #wrapper { width: 460px; margin: 10px auto; }
+    ol { padding: 0; margin: 0; list-style: decimal-leading-zero inside; color: #ccc; width: 460px; border-top: 1px solid #ccc; font-size: 0.9em; }
+    ol li { position: relative; margin: 0; padding: 9px 2px 10px; border-bottom: 1px solid #ccc; cursor: pointer; }
+    ol li a { display: block; text-indent: -3.3ex; padding: 0 0 0 20px; color: #FF00A3; }
+    li.playing { color: #aaa; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); }
+    li.playing a { color: #000; }
+    li.playing:before { content: '♫'; width: 14px; height: 14px; padding: 3px; line-height: 14px; margin: 0px; position: absolute; left: -24px; top: 9px; color: #000; font-size: 13px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+    #album { width: inherit;	}
+    .audiojs { width: 460px; height: 36px; background: #640FC0; overflow: hidden; font-family: monospace; font-size: 12px;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0085FF), color-stop(0.5, #0085FF), color-stop(0.51, #0085FF), color-stop(1, #0085FF));
+        background-image: -moz-linear-gradient(center top , #0085FF 0%, #0085FF 50%, #0085FF 51%, #0085FF 100%);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);	}
+    
+    /* Page Container */
+    #pageContainer { display: block; overflow: auto; }
+    #pageContainer ul { list-style-type: none;	}
+    #pageContainer ul li { display: inline; }
+    .pagination { clear: both;	}
+    .pagination a { height: 25px; padding: 4px 8px; margin: 2px; border: 1px solid #D5D5D5; color: #666666; font-size: 11px; font-weight: bold;  text-decoration: none;	}
+    .pagination a:hover, .pagination a:active { background:#efefef;	}
+    .pagination span.current { height: 25px; padding: 4px 8px; border: 1px solid #D5D5D5; margin:2px; background-color: #687282; color: #ffffff; font-size: 11px; font-weight: bold; text-decoration: none;	}
+    .pagination span.disabled { padding: 2px 5px; border: 1px solid #EEEEEE; margin: 2px; color: #DDDDDD;	}
+    
+    /*	FOOTER	*/
+    footer { background: initial; text-align: center; font-size: 12px; clear: both; }
+}
+/* END MEDIA SCREEN MIN 1400px */
